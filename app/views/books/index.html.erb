@@ -18,7 +18,8 @@
       <td><%= book.author %></td>
       <td><%= book.status %></td>
       <td class="text-center">
-        <%= link_to 'Show', '#' %>
+        <%#= link_to 'Detalle', book %>
+        <%= link_to 'Detalle', book_path(book.id) %>
       </td>
       <td class="text-center">
         <%= link_to 'Edit', '#' %>
@@ -30,3 +31,5 @@
     <% end %>
   </tbody>
 </table>
+
+<%= link_to 'Crear Nuevo Libro', books_new_path %>

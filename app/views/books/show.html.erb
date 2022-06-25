@@ -1,0 +1,19 @@
+<h1><strong><%= @book.title %></strong></h1>
+<p>
+    <strong>Autor:</strong>
+    <%= @book.author %>
+</p>
+<p>
+    <strong>Estado:</strong>
+    <%= @book.status %>
+</p>
+<p>
+    <strong>Prestado en:</strong>
+    <%= @book.borrowed_at %>
+</p>
+<p>
+    <strong>Devuelto en:</strong>
+    <%= @book.returned_at %>
+</p>
+
+<%= link_to 'Volver', root_path %>
